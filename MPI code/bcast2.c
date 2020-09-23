@@ -1,12 +1,12 @@
 #include <stdio.h> 		 
 #include <malloc.h>
 #include <time.h> 
-#include <mpi.h>  		
+#include <mpi.h>  		//ignore warning here
 #include"stdlib.h"
 #define mpc MPI_COMM_WORLD
     //Program to read n integer numbers from 
 	//an input file and storing in an array
-    //adding these no.'s in Parallel  09/21/20
+    //adding these no.'s in Parallel  
     //TO COMPILE mpicc bcast.c
     //TO RUN	 mpirun -n p a.out n inputfilename
 	// p is number of processors
