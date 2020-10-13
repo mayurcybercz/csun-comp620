@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#define BUFSIZE 9
+
+int collapse_int(int num){
+    int collapsed=0;
+    char chararr[BUFSIZE];
+    snprintf(chararr, sizeof(chararr), "%d", num);
+    for(int i=0;i<(strlen(chararr));i++){
+        int temp=chararr[i] - '0';
+        collapsed=collapsed+temp;
+    }
+    if(collapsed>9){
+        return collapse_int(collapsed);
+    }
+    else{
+        return collapsed;
+    }
+}
+
+
+int main()
+{
+    printf("%d",collapse_int(111));
+    
+    return 0;
+}
