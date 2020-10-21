@@ -5,7 +5,8 @@
 #include <mpi.h>
 
 #define mpc MPI_COMM_WORLD
-#define BUFSIZE 
+#define BUFSIZE 9
+
 
 //Submission of Parallel Homework 2 by Mayur Rahangdale
 
